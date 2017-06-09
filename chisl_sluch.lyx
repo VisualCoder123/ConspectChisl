@@ -1,0 +1,1736 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Численное моделирование случайных процессов
+\end_layout
+
+\begin_layout Author
+Ромаданова Мария Михайловна
+\end_layout
+
+\begin_layout Abstract
+В среду третья пара по знаменателю
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+10.01.17 практика
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+15.02.17 лекция
+\end_layout
+
+\begin_layout Standard
+Летняя практика.
+ Производственную можно проходить дома.
+ Есть возможность пройти практику в приемной коммиссии.
+ Харламов Борис Павлович.
+ Случайные процессы.
+\end_layout
+
+\begin_layout Section
+Дискретные случайные величины
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Законом распределения случайной величины 
+\series default
+называется любое соотношение, устанавливающее связь между возможными значениями
+ случайной величины и вероятностями, соответствующими этим значениям.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Рядом распределения дискретной СВ 
+\series default
+называется совокупность всех ее возможных значений 
+\begin_inset Formula $x_{1},x_{2},...,x_{n}$
+\end_inset
+
+ и вероятностями 
+\begin_inset Formula $p_{1},p_{2},...p_{n}$
+\end_inset
+
+ появления каждого из этих событий.
+\end_layout
+
+\begin_layout Standard
+В Matlab будем рисовать ряд распределения.
+\end_layout
+
+\begin_layout Standard
+Функция распределения 
+\begin_inset Formula $F_{X}\left(x\right)=P\left(X<x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ряд распределения:
+\end_layout
+
+\begin_layout Standard
+Функция распределения для дискретной целочисленной случайной величины:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x\right)=\begin{cases}
+0 & x\leq x_{1}\\
+\sum_{i=0}^{k}p_{i} & k=1,2,...,n\\
+1 & x\geq x_{n}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+График???
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\left(X\right)=x_{1}p_{1}+...x_{n}p_{n}=\sum_{i=1}^{n}x_{k}p_{k}$
+\end_inset
+
+ (может быть 
+\begin_inset Formula $n=\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Свойства математического ожидания:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\left(C\right)=C$
+\end_inset
+
+,c - константа
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\left(CX\right)=CM\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\left(XY\right)=M\left(X\right)M\left(Y\right)$
+\end_inset
+
+, X,Y - независимые СВ
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\left(X+Y\right)=M\left(X\right)+M\left(Y\right)$
+\end_inset
+
+- в данном случае X,Y могут быть не независимыми
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Отклонение случайной величины от ее математического ожидания
+\end_layout
+
+\begin_layout Standard
+Пусть есть СВ 
+\begin_inset Formula $X$
+\end_inset
+
+ и ее 
+\begin_inset Formula $M\left(X\right)$
+\end_inset
+
+ - математическое ожидание.
+\end_layout
+
+\begin_layout Standard
+Рассмотрим новую случайную величину 
+\begin_inset Formula $X-M\left(X\right)$
+\end_inset
+
+- отклонение случайной величины от ее МО.
+ Это распределение будет принимать значения 
+\begin_inset Formula $x_{1}-M\left(X\right),x_{2}-M\left(X\right),...x_{n}-M\left(X\right)$
+\end_inset
+
+ с вероятностями 
+\begin_inset Formula $p_{1},p_{2},...,p_{n}$
+\end_inset
+
+ соответственно.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\left(X-M\left(X\right)\right)=0$
+\end_inset
+
+, т.к.
+ 
+\begin_inset Formula $M\left(X-M\left(X\right)\right)=M\left(X\right)-M\left(M\left(X\right)\right)=M\left(X\right)-M\left(X\right)=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Дисперсией
+\series default
+ дискретной СВ называют МО квадрата отклонения СВ от ее МО: 
+\begin_inset Formula $D\left(X\right)=M\left[X-M\left(X\right)\right]^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=M\left[X^{2}-2X\cdot M\left(X\right)+\left(M\left(X\right)\right)^{2}\right]=M\left(X\right)^{2}-\left(M\left(X\right)\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Свойства дисперсии:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D\left(C\right)=0$
+\end_inset
+
+,C-const, 
+\begin_inset Formula $D\left(C\right)=M\left[C-M\left(C\right)\right]^{2}=M\left(C^{2}\right)-\left(M\left(C\right)\right)^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D\left(CX\right)=C^{2}D\left(X\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D\left(X+Y\right)=D\left(X\right)+D\left(Y\right)$
+\end_inset
+
+, X, Y - независимые
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D\left(X-Y\right)=D\left(X\right)+D\left(-Y\right)=D\left(X\right)+D\left(Y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Средним квадратическим отклонением
+\series default
+ СВ называется отклонение квадратный корень из дисперсии: 
+\begin_inset Formula $\sigma\left(X\right)=\sqrt{D\left(X\right)}$
+\end_inset
+
+ - данное понятие нужно для совпадения размерностей.
+\end_layout
+
+\begin_layout Standard
+В Matlab есть встроенные функции: mean (МО), var (varience), std (среднее
+ квадратическое отклонение)
+\end_layout
+
+\begin_layout Standard
+Введем m=1000, u=rand(1,m), тогда мы можем применить эти функции: man(u),var(u),
+ std(u).
+ Это сходится с формулами.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+- независимые случайные величины, то 
+\begin_inset Formula $X=X_{1}+X_{2}+...+X_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=D\left(X_{1}\right)+D\left(X_{2}\right)+...+D\left(X_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sqrt{D\left(X\right)}=\sqrt{D\left(X_{1}\right)+D\left(X_{2}\right)+...+D\left(X_{n}\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma\left(X\right)=\sqrt{\sigma^{2}\left(X_{1}\right)+...+\sigma^{2}\left(X_{n}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Независимые одинаково-распределенные случайные величины НОР СВ.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+- НОР СВ
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\bar{X}=\frac{X_{1}+...+X_{n}}{n}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $M\left(\bar{X}\right)=\frac{M\left(X_{1}\right)+...+M\left(X_{n}\right)}{n}=\frac{n\cdot a}{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $M\left(X_{i}\right)=a,i=1,2,...,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(\bar{X}\right)=D\left(\frac{X_{1}+X_{2}+...+X_{n}}{n}\right)=\frac{D\left(X_{1}\right)+D\left(X_{2}\right)+...+D\left(X_{n}\right)}{n^{2}}=\frac{n\cdot D}{n^{2}}=\frac{D}{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma\left(\bar{X}\right)=\sqrt{D\left(\bar{X}\right)}=\sqrt{\frac{D}{n}}=\frac{\sqrt{D}}{\sqrt{n}}=\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\sigma=\sigma\left(X_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Функция распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{X}\left(x\right)=P\left(X<x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0\leq F\left(x\right)\leq1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+- неубывающая, 
+\begin_inset Formula $F\left(x_{2}\right)>F\left(x_{1}\right),x_{2}>x_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(a<X<b\right)=f\left(b\right)-f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(x_{1}<X<x_{1}+\Delta x\right)=F\left(x_{1}+\Delta x\right)-F\left(x_{1}\right)$
+\end_inset
+
+ Вероятность того, что непрерывная СВ примет одно конкретное значение, равняется
+ нулю.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\rightarrow-\infty}F\left(x\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\rightarrow+\infty}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Плотность распределения непрерывной случайной величины
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Плотность 
+\series default
+- производная от функции распределения, 
+\begin_inset Formula $f\left(x\right)=F'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(a<x<b\right)=\int_{a}^{b}f\left(x\right)dx$
+\end_inset
+
+, т.к.
+ 
+\begin_inset Formula $P\left(a<X<b\right)=F\left(b\right)-F\left(a\right)=\int_{a}^{b}F'\left(x\right)dx=\int_{a}^{b}f\left(x\right)dx$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x\right)=\int_{-\infty}^{\text{x}}f\left(t\right)dt=P\left(X-x\right)$
+\end_inset
+
+ 
+\begin_inset Formula $P\left(-\infty<X<x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{-\infty}^{x}f\left(t\right)dt$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\int_{-\infty}^{\infty}f\left(x\right)dx=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Дискретное равномерное распределение
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p\left(x\right)=\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=a,a+1,a+2,a+n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+n - параметр масштаба
+\end_layout
+
+\begin_layout Standard
+a - параметр положения, число возможных значений 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+ГРАФИК ???
+\end_layout
+
+\begin_layout Standard
+Таблица:
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a+n-1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функция распределения: 
+\begin_inset Formula $F\left(x\right)=\begin{cases}
+0 & x\leq a\\
+\frac{k+1}{n} & a+k<x\leq a+k+1\\
+1 & x>a+n-1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Математическое ожидание: 
+\begin_inset Formula $M\left(X\right)=a+\frac{n-1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(X\right)=\frac{n^{2}-1}{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X_{i}=\left[n\cdot r_{i}\right]+a$
+\end_inset
+
+, 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ имеют равномерное распредеелние на отрезке 
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $r_{i}\sim U\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+17.02.17 практика
+\end_layout
+
+\begin_layout Standard
+Случайная величина имеет 
+\series bold
+непрерывное равномерное распределение 
+\series default
+на отрезке от a до b, где 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+, 
+\begin_inset Formula $f_{X}\left(x\right)=\begin{cases}
+\frac{1}{b-a} & x\in\left[a,b\right]\\
+0 & x\cancel{\in}\left[a,b\right]
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Записывается 
+\begin_inset Formula $X\sim U\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x\right)=\int_{-\infty}^{x}f\left(t\right)dt=\int_{a}^{x}\frac{1}{b-a}dt=\frac{x-a}{b-a}$
+\end_inset
+
+ 
+\begin_inset Formula $a\leq x<b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x\right)=\begin{cases}
+0 & x<a\\
+\frac{x-a}{b-a} & a\leq x<b\\
+1 & x\geq b
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+График???
+\end_layout
+
+\begin_layout Standard
+Интеграл будет записан в виде
+\end_layout
+
+\begin_layout Standard
+Математическое ожидание и дисперсия
+\end_layout
+
+\begin_layout Standard
+Математическое ожидание 
+\begin_inset Formula $E\left(X\right)=\int_{-\infty}^{\infty}x\cdot f\left(x\right)dx=\int_{-\infty}^{\infty}x\frac{1}{b-a}dx=\frac{1}{b-a}\int_{a}^{b}xdx=\frac{1}{b-a}\frac{x^{2}}{2}|_{a}^{b}=\frac{b^{2}-a^{2}}{2\left(b-a\right)}=\frac{a+b}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=E\left(\left(X-E\left(X\right)\right)^{2}\right)=E\left(X^{2}\right)-\left(E\left(X\right)\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(X^{2}\right)=\int_{-\infty}^{\infty}\frac{x^{2}}{b-a}dx=\frac{1}{b-a}\int_{-\infty}^{+\infty}x^{2}dx=\frac{1}{b-a}\frac{x^{3}}{3}|_{a}^{b}=\frac{b^{3}-a^{3}}{3\left(b-a\right)}=\frac{\left(b-a\right)\left(b^{2}+ba+a^{2}\right)}{3\left(b-a\right)}=\frac{b^{2}+ba+a^{2}}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=\frac{b^{2}+ba+a^{2}}{3}-\frac{\left(a+b\right)^{2}}{4}=\frac{4b^{2}+4ba+4a^{2}-3a^{2}-6ab-3b^{2}}{12}=\frac{\left(a-b\right)^{2}}{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X\text{\textasciitilde}U\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+m=1000; x=rand(1,m);
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y=a+\left(b-a\right)\cdot X\Rightarrow Y\sim U\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+01.03.17 лекция
+\end_layout
+
+\begin_layout Standard
+Сегодняшняя лекция не связана с практикой.
+\end_layout
+
+\begin_layout Section
+Вероятностное пространство.
+ Случайные величины и случайные процессы.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Определение:
+\series default
+ Пусть 
+\begin_inset Formula $\Omega$
+\end_inset
+
+- заданное множество, тогда 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ - алгебра на 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ есть семейство 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ подмножеств со следующими со следующими свойствами
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\cancel{o}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $F\in F\Rightarrow F^{C}\in F$
+\end_inset
+
+ где 
+\begin_inset Formula $F^{C}=\Omega/F$
+\end_inset
+
+ дополнение множества F в 
+\begin_inset Formula $\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A_{1},A_{2}\in\mathcal{F}\Rightarrow\bigcup_{i=1}^{\infty}A_{i}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пара 
+\begin_inset Formula $\left(\Omega,\mathcal{F}\right)$
+\end_inset
+
+называется измеримым прсотранством.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Вероятностной мерой 
+\series default
+на измеримом пространстве 
+\begin_inset Formula $\left(\Omega,\mathcal{F}\right)$
+\end_inset
+
+ называется функция 
+\begin_inset Formula $P:F\rightarrow\left[0,1\right]$
+\end_inset
+
+ такая что
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $P\left(0\right)=0,P\left(\Omega\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Если 
+\begin_inset Formula $A_{1},A_{2},...\in\mathcal{F}$
+\end_inset
+
+и 
+\begin_inset Formula $\left\{ A_{i}\right\} _{i=1}^{\infty}$
+\end_inset
+
+ - непересекающаяся система 
+\begin_inset Formula $\left(A_{i}\bigcap A_{j}=\emptyset\text{ при}\ensuremath{i\neq j}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Тройка 
+\begin_inset Formula $\left(\Omega,F,P\right)$
+\end_inset
+
+ называется 
+\series bold
+вероятностным пространством
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+Вероятностное пространство называется 
+\series bold
+полным
+\series default
+, если 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ содержит все подмножества 
+\begin_inset Formula $G$
+\end_inset
+
+ множества 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ с 
+\begin_inset Formula $P$
+\end_inset
+
+ - внешней мерой ноль, т.е.
+ такие подмножества, что 
+\begin_inset Formula $P^{*}\left(G\right)=inf\left(P\left(F\right);F\in\mathcal{F},G\in\mathcal{F}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\left(\Omega,\mathcal{F},P\right)$
+\end_inset
+
+ - заданное вероятностное пространство.
+ Тогда функция 
+\begin_inset Formula $Y:\Omega\rightarrow\mathcal{R}{}^{N}$
+\end_inset
+
+ называется 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+-измеримой, если 
+\begin_inset Formula $Y^{-1}\left(U\right):=\left\{ \omega\in\Omega,Y\left(\omega\right)\in U\right\} \in\mathcal{F}$
+\end_inset
+
+ для всех открытых множеств 
+\begin_inset Formula $U\in\mathcal{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X:\Omega\rightarrow\mathcal{R}^{N}$
+\end_inset
+
+- произвольная функция, то 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ -алгебра 
+\begin_inset Formula $\mathcal{H}_{X}$
+\end_inset
+
+порожденная 
+\begin_inset Formula $X$
+\end_inset
+
+ есть наименьшая 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ - алгебра на 
+\begin_inset Formula $\Omega$
+\end_inset
+
+, содержащая все множества 
+\begin_inset Formula $U\in\mathcal{R}^{n}$
+\end_inset
+
+ открыты.
+ 
+\end_layout
+
+\begin_layout Standard
+Случайная величина 
+\begin_inset Formula $X$
+\end_inset
+
+ есть 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+-измеримая функция 
+\begin_inset Formula $X:\Omega\rightarrow\mathcal{F}^{n}$
+\end_inset
+
+.
+ Каждая случайная величина порождает вероятностную меру 
+\begin_inset Formula $\mu_{X}$
+\end_inset
+
+ на 
+\begin_inset Formula $\mathcal{R}^{n}$
+\end_inset
+
+, определеяемую равенством 
+\begin_inset Formula $\mu_{X}\left(B\right)=P\left(X^{-1}\left(B\right)\right)$
+\end_inset
+
+.
+ Мера 
+\begin_inset Formula $\mu_{X}$
+\end_inset
+
+ называется 
+\series bold
+распределением величины
+\series default
+ 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\int_{\Omega}\left|X\left(\omega\right)\right|dP\left(\omega\right)<\infty$
+\end_inset
+
+, то число 
+\begin_inset Formula $E\left[X\right]=\int_{\Omega}X\left(\omega\right)dP\left(\omega\right)=\int_{\mathcal{R}^{n}}xd\mu_{X}\left(x\right)$
+\end_inset
+
+ называется 
+\series bold
+математическим ожиданием 
+\series default
+величины 
+\begin_inset Formula $X$
+\end_inset
+
+ (относительно меры 
+\begin_inset Formula $\text{P}$
+\end_inset
+
+ )
+\end_layout
+
+\begin_layout Standard
+Случайный процесс - это параметризованный набор случайных величин 
+\begin_inset Formula $\left\{ X_{t}\right\} _{t\in T}$
+\end_inset
+
+определенных на вероятностном пространстве пространстве 
+\begin_inset Formula $\left(\Omega,\mathcal{F},P\right)$
+\end_inset
+
+ и принимающих значения в 
+\begin_inset Formula $\mathcal{R}^{n}$
+\end_inset
+
+.
+ Множеством параметров 
+\begin_inset Formula $T$
+\end_inset
+
+ обычно является полупрямая 
+\begin_inset Formula $[0,\infty)$
+\end_inset
+
+, однако это может быть и отрезок 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Для каждог офиксирвоанного 
+\begin_inset Formula $t\in T$
+\end_inset
+
+ мы получаем случайную величину 
+\begin_inset Formula $\omega\mapsto X_{t}\left(\omega\right),\omega\in\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+С другой стороны, фиксируя 
+\begin_inset Formula $\omega\in\Omega$
+\end_inset
+
+, мы можем рассмотреть функцию 
+\begin_inset Formula $t\mapsto X_{\tau}\left(\omega\right),t\in T$
+\end_inset
+
+ которая называется траекторией процесса 
+\begin_inset Formula $X_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Условное математическое ожидание
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $\left(\Omega,\mathcal{F},P\right)$
+\end_inset
+
+ - вероятностное пространство, 
+\begin_inset Formula $X\rightarrow\mathcal{R}^{n}$
+\end_inset
+
+ и случаяная величина 
+\begin_inset Formula $E\left(\left|X\right|\right)<\infty$
+\end_inset
+
+.
+ Если 
+\begin_inset Formula $\mathcal{H}\in\mathcal{F}$
+\end_inset
+
+ есть 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ -алгебра, то 
+\series bold
+условное математическое ожидание случайной величины 
+\series default
+
+\begin_inset Formula $X$
+\end_inset
+
+ 
+\series bold
+относительно 
+\series default
+
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ 
+\begin_inset Formula $E\left[X|\mathcal{H}\right]$
+\end_inset
+
+ - функция, действующая из 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ в 
+\begin_inset Formula $\mathcal{R}^{n}$
+\end_inset
+
+ и удовлетворяющая условиям:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[X|\mathcal{H}\right]$
+\end_inset
+
+ является 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+- измеримой функцией
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int_{H}E\left[X|\mathcal{H}\right]=\int_{H}XdP$
+\end_inset
+
+ для всех 
+\begin_inset Formula $H\in\mathcal{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Свойства условного МО:
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $Y:\Omega\rightarrow\mathcal{R}^{n}$
+\end_inset
+
+ - другая случайная величина с математическим ожиданием 
+\begin_inset Formula $E\left[\left|Y\right|\right]<\infty$
+\end_inset
+
+ и пусть 
+\begin_inset Formula $a$
+\end_inset
+
+ и 
+\begin_inset Formula $b$
+\end_inset
+
+ 
+\begin_inset Formula $\in\mathcal{R}^{n}$
+\end_inset
+
+.
+ тогда:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[aX+bY\mathcal{H}\right]=aE\left[X|\mathcal{H}\right]+bE\left[Y|\mathcal{H}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[E\left[X|\mathcal{H}\right]\right]=E\left[X\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[X|\mathcal{H}\right]=X$
+\end_inset
+
+, если 
+\begin_inset Formula $X$
+\end_inset
+
+ - 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+- измеримая функция.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[X|\mathcal{H}\right]=E\left[X\right]$
+\end_inset
+
+, если 
+\begin_inset Formula $X$
+\end_inset
+
+ не зависит от 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[Y\cdot X|\mathcal{H}\right]=Y\cdot E\left[X|\mathcal{H}\right]$
+\end_inset
+
+, если 
+\begin_inset Formula $Y$
+\end_inset
+
+ - 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+-измеримая случайная величина.
+ 
+\begin_inset Formula $\cdot$
+\end_inset
+
+ означает скалярное произведение в 
+\begin_inset Formula $\mathcal{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Доказательство:
+\end_layout
+
+\begin_layout Standard
+№4.
+ Если 
+\begin_inset Formula $X$
+\end_inset
+
+ не зависит от сли 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+, то для 
+\begin_inset Formula $H\in\mathcal{H}$
+\end_inset
+
+ мы получаем 
+\begin_inset Formula $\int_{H}XdP=\int_{\Omega}X\cdot I_{H}dP=\int_{\Omega}XdP\cdot\int_{\Omega}I_{H}dP=E\left(X\right)P\left(H\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следовательно, постоянное значение 
+\begin_inset Formula $E\left[X\right]$
+\end_inset
+
+ удовлетворяет условиям (1) и (2) из определения.
+\end_layout
+
+\begin_layout Standard
+№5.
+ Сначала докажем результат для случая, когда 
+\begin_inset Formula $Y=I_{H}$
+\end_inset
+
+ для некоторого 
+\begin_inset Formula $H\in\mathcal{H}$
+\end_inset
+
+.
+ Тогда для всех 
+\begin_inset Formula $G\in\mathcal{H}$
+\end_inset
+
+ мы имеем 
+\begin_inset Formula $\int_{G}Y\cdot E\left[X|\mathcal{H}\right]dP=\int_{G\bigcap H}E\left[X|\mathcal{H}\right]dP=\int_{G\bigcap H}XdP=\int_{G}Y\cdot XdP$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Следовательно, 
+\begin_inset Formula $Y\cdot E\left[X|\mathcal{H}\right]$
+\end_inset
+
+удовлетворяет условиям (1) и (2).
+\end_layout
+
+\begin_layout Standard
+Аналогично доказывается, что утверждение справедливо если 
+\begin_inset Formula $Y$
+\end_inset
+
+ - простая функция.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y=\sum_{j=1}^{m}c_{j}I_{H_{j}}$
+\end_inset
+
+ где 
+\begin_inset Formula $H_{j}\in\mathcal{H}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+В общем случае утверждение следует из аппроксимации величины 
+\begin_inset Formula $Y$
+\end_inset
+
+ такими простыми функциями.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Теорема 1:
+\series default
+ Пусть 
+\begin_inset Formula $G,\mathcal{H}$
+\end_inset
+
+- 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ - алгебры такие, что 
+\begin_inset Formula $G\subset\mathcal{H}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $E\left[X|G\right]=E\left[E\left[X|\mathcal{H}\right]|G\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Теорема 2 (Неравенство Йенсена): 
+\series default
+если 
+\begin_inset Formula $\Phi:\mathcal{R}\rightarrow R$
+\end_inset
+
+ - выпуклая функция и 
+\begin_inset Formula $E\left[|\Phi\left(X\right)\right]<\infty$
+\end_inset
+
+ , то 
+\begin_inset Formula $\Phi\left(E\left[X|\mathcal{H}\right]\right)\leq E\left[\Phi\left(X\right)|\mathcal{H}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствия:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E\left[X|\mathcal{H}\right]\leq E\left[\left|X\right||\mathcal{H}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(E\left[X|\mathcal{H}\right]\right)^{2}\leq E\left[\left|X\right|^{2}|\mathcal{H}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X_{n}\rightarrow X$
+\end_inset
+
+ в то 
+\begin_inset Formula $E\left[X_{n}|\mathcal{H}\right]\rightarrow E\left[X|\mathcal{H}\right]$
+\end_inset
+
+ в 
+\begin_inset Formula $L^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Мартингалы
+\end_layout
+
+\begin_layout Standard
+Адаптированный случайный процесс 
+\begin_inset Formula $\left(X_{t}\right)_{t\geq0}$
+\end_inset
+
+ называется мартингалом если для всех 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $t\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $E\left|X_{t}\right|<\infty$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(X_{t+s}|\mathcal{F}_{t}\right)=X_{t}$
+\end_inset
+
+(P - почти наверное) 
+\begin_inset Formula $s,t\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(предыдущие два условия - *)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(X_{t}\right)_{t\geq0}$
+\end_inset
+
+ называется 
+\series bold
+субмартингалом
+\series default
+, если он удовлетвоярет условию (*) и 
+\begin_inset Formula $E\left(X_{t+s}|\mathcal{F}_{t}\right)\geq X_{t}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Адаптированный СП 
+\begin_inset Formula $\left(X_{t}\right)_{t\geq0}$
+\end_inset
+
+ называется 
+\series bold
+супермартингалом
+\series default
+, если он удовлетворяет условию (*) и выполняется 
+\begin_inset Formula $E\left[X_{t+s}|\mathcal{F}_{t}\right]\leq X_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X_{t}\left(t\geq0\right)$
+\end_inset
+
+- субмартингал, то процесс 
+\begin_inset Formula $\left(-X_{t}\right)$
+\end_inset
+
+- супермартингал.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(X_{t}\right)_{t\geq0}$
+\end_inset
+
+ называется 
+\series bold
+мартингал-разностью
+\series default
+ если он удовлетворяет усолвию (*) и выполянется 
+\begin_inset Formula $E\left[X_{t+s}|\mathcal{F}_{t}\right]=0$
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
