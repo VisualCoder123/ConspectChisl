@@ -114,152 +114,6 @@ LatexCommand tableofcontents
  
 \end_layout
 
-\begin_layout Subsection
-Функция распределения и её свойства.
- Плотность вероятности и её свойства.
- 
-\end_layout
-
-\begin_layout Subsection
-Равномерное распределение на отрезке [a, b].
- Плотность и функция распределения равномерного распределения.
- Моделирование случайных величин, равномерно распределённых на отрезке [a,
- b] в MATLAB, и построение гистограммы распределения.
- Вычисление числовых характеристик: математического ожидания, дисперсии,
- среднего квадратического отклонения.
- 
-\end_layout
-
-\begin_layout Subsection
-Нормальное распределение N(µ,σ2).
- Плотность и функция распределения нормального распределения.
- Функция Лапласа.
- Свойства плотности нормального распределения.
- Построение плотности и функции распределения в MATLAB, моделирование случайных
- величин и построение гистограммы распределения.
- Вычисление числовых характеристик: математического ожидания, дисперсии,
- среднего квадратического отклонения.
- 
-\end_layout
-
-\begin_layout Subsection
-Вероятность попадания нормально распределенной случайной величины в заданный
- интервал.
- Правило 3 сигм.
- Моделирование случайных величин с нормальным распределением N(µ,σ2) в MATLAB.
-\end_layout
-
-\begin_layout Subsection
-Моделирование дискретных случайных величин.
- Общий метод: моделирование а) по заданному закону распределения; б) по
- заданной функции распределения.
- Вычисление числовых характеристик.
- 
-\end_layout
-
-\begin_layout Subsection
-Моделирование дискретных случайных величин.
- Частный метод: моделирование дискретного равномерного распределения.
- Вычисление числовых характеристик.
- 
-\end_layout
-
-\begin_layout Subsection
-Моделирование непрерывных случайных величин.
- Общие методы.
- Метод обратной функции.
- Моделирование случайных величин экспоненциально распределенных с параметром
- λ .
- 
-\end_layout
-
-\begin_layout Subsection
-Моделирование непрерывных случайных величин.
- Общие методы.
- Метод Неймана.
- 
-\end_layout
-
-\begin_layout Subsection
-Приближенное моделирование нормальной случайной величины на основе центральной
- предельной теоремы.
- 
-\end_layout
-
-\begin_layout Subsection
-Метод Бокса-Мюллера.
- 
-\end_layout
-
-\begin_layout Subsection
-Моделирование многомерного гауссовского распределения
-\end_layout
-
-\begin_layout Section
-Третья Часть
-\end_layout
-
-\begin_layout Subsection
-Вероятностные пространства, случайные величины и случайные процессы.
- 
-\end_layout
-
-\begin_layout Subsection
-Условное математическое ожидание и его свойства.
-\end_layout
-
-\begin_layout Subsection
-Мартингалы, субмартингалы и супермартингалы.
- Привести примеры.
- 
-\end_layout
-
-\begin_layout Subsection
-Предельные теоремы для мартингалов.
- 
-\end_layout
-
-\begin_layout Subsection
-Многомерное гауссовское распределение.
- 
-\end_layout
-
-\begin_layout Subsection
-Процессы с независимыми приращениями.
- 
-\end_layout
-
-\begin_layout Subsection
-Распределение Пуассона.
- Процесс Пуассона.
- Неоднородный процесс Пуассона.
- Сложный процесс Пуассона.
- 
-\end_layout
-
-\begin_layout Subsection
-Винеровский процесс.
- 
-\end_layout
-
-\begin_layout Subsection
-Марковские цепи.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-15.02.17 лекция
-\end_layout
-
-\begin_layout Section
-Дискретные случайные величины
-\end_layout
-
-\begin_layout Subsection
-Основные понятия
-\end_layout
-
 \begin_layout Standard
 
 \series bold
@@ -466,6 +320,7 @@ p
 \end_layout
 
 \begin_layout Standard
+Математическое ожидание 
 \begin_inset Formula $M\left(X\right)=x_{1}p_{1}+...x_{n}p_{n}=\sum_{i=1}^{n}x_{k}p_{k}$
 \end_inset
 
@@ -506,24 +361,6 @@ p
 \end_inset
 
 - в данном случае X,Y могут быть не независимыми
-\end_layout
-
-\begin_layout Subsection
-
-\series bold
-Отклонение случайной величины от ее математического ожидания
-\end_layout
-
-\begin_layout Standard
-Пусть есть СВ 
-\begin_inset Formula $X$
-\end_inset
-
- и ее 
-\begin_inset Formula $M\left(X\right)$
-\end_inset
-
- - математическое ожидание.
 \end_layout
 
 \begin_layout Standard
@@ -669,57 +506,9 @@ p
 \end_layout
 
 \begin_layout Subsection
-Независимые одинаково-распределенные случайные величины НОР СВ.
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $X_{1},X_{2},...,X_{n}$
-\end_inset
-
-- НОР СВ
-\end_layout
-
-\begin_layout Standard
-Обозначим 
-\begin_inset Formula $\bar{X}=\frac{X_{1}+...+X_{n}}{n}$
-\end_inset
-
-, тогда 
-\begin_inset Formula $M\left(\bar{X}\right)=\frac{M\left(X_{1}\right)+...+M\left(X_{n}\right)}{n}=\frac{n\cdot a}{n}=a$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-где 
-\begin_inset Formula $M\left(X_{i}\right)=a,i=1,2,...,n$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $D\left(\bar{X}\right)=D\left(\frac{X_{1}+X_{2}+...+X_{n}}{n}\right)=\frac{D\left(X_{1}\right)+D\left(X_{2}\right)+...+D\left(X_{n}\right)}{n^{2}}=\frac{n\cdot D}{n^{2}}=\frac{D}{n}$
-\end_inset
-
+Функция распределения и её свойства.
+ Плотность вероятности и её свойства.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\sigma\left(\bar{X}\right)=\sqrt{D\left(\bar{X}\right)}=\sqrt{\frac{D}{n}}=\frac{\sqrt{D}}{\sqrt{n}}=\frac{\sigma}{\sqrt{n}}$
-\end_inset
-
-, где 
-\begin_inset Formula $\sigma=\sigma\left(X_{i}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Функция распределения
 \end_layout
 
 \begin_layout Standard
@@ -775,10 +564,6 @@ p
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Плотность распределения непрерывной случайной величины
 \end_layout
 
 \begin_layout Standard
@@ -838,8 +623,117 @@ p
 
 \end_layout
 
-\begin_layout Section
-Дискретное равномерное распределение
+\begin_layout Subsection
+Равномерное распределение на отрезке [a, b].
+ Плотность и функция распределения равномерного распределения.
+ Моделирование случайных величин, равномерно распределённых на отрезке [a,
+ b] в MATLAB, и построение гистограммы распределения.
+ Вычисление числовых характеристик: математического ожидания, дисперсии,
+ среднего квадратического отклонения.
+ 
+\end_layout
+
+\begin_layout Standard
+Случайная величина имеет 
+\series bold
+непрерывное равномерное распределение 
+\series default
+на отрезке от a до b, где 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{X}\left(x\right)=\begin{cases}
+\frac{1}{b-a} & x\in\left[a,b\right]\\
+0 & x\cancel{\in}\left[a,b\right]
+\end{cases}$
+\end_inset
+
+, 
+\begin_inset Formula $X\sim U\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F\left(x\right)=\int_{-\infty}^{x}f\left(t\right)dt=\int_{a}^{x}\frac{1}{b-a}dt=\frac{x-a}{b-a}$
+\end_inset
+
+ 
+\begin_inset Formula $a\leq x<b$
+\end_inset
+
+, т.е.
+ 
+\begin_inset Formula $F\left(x\right)=\begin{cases}
+0 & x<a\\
+\frac{x-a}{b-a} & a\leq x<b\\
+1 & x\geq b
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено4.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Математическое ожидание 
+\begin_inset Formula $E\left(X\right)=\int_{-\infty}^{\infty}x\cdot f\left(x\right)dx=\int_{-\infty}^{\infty}x\frac{1}{b-a}dx=\frac{1}{b-a}\int_{a}^{b}xdx=\frac{1}{b-a}\frac{x^{2}}{2}|_{a}^{b}=\frac{b^{2}-a^{2}}{2\left(b-a\right)}=\frac{a+b}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=E\left(\left(X-E\left(X\right)\right)^{2}\right)=E\left(X^{2}\right)-\left(E\left(X\right)\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(X^{2}\right)=\int_{-\infty}^{\infty}\frac{x^{2}}{b-a}dx=\frac{1}{b-a}\int_{-\infty}^{+\infty}x^{2}dx=\frac{1}{b-a}\frac{x^{3}}{3}|_{a}^{b}=\frac{b^{3}-a^{3}}{3\left(b-a\right)}=\frac{\left(b-a\right)\left(b^{2}+ba+a^{2}\right)}{3\left(b-a\right)}=\frac{b^{2}+ba+a^{2}}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(X\right)=\frac{b^{2}+ba+a^{2}}{3}-\frac{\left(a+b\right)^{2}}{4}=\frac{4b^{2}+4ba+4a^{2}-3a^{2}-6ab-3b^{2}}{12}=\frac{\left(a-b\right)^{2}}{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Если 
+\begin_inset Formula $X\text{\textasciitilde}U\left[0,1\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $Y=a+\left(b-a\right)\cdot X\Rightarrow Y\sim U\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Дискретный случай
 \end_layout
 
 \begin_layout Standard
@@ -999,6 +893,10 @@ p
 \begin_inset Formula $D\left(X\right)=\frac{n^{2}-1}{12}$
 \end_inset
 
+, 
+\begin_inset Formula $\sigma\left(X\right)=\sqrt{D\left(X\right)}$
+\end_inset
+
 
 \end_layout
 
@@ -1006,7 +904,7 @@ p
 \begin_inset Formula $X_{i}=\left[n\cdot r_{i}\right]+a$
 \end_inset
 
-, 
+, где 
 \begin_inset Formula $r_{i}$
 \end_inset
 
@@ -1021,55 +919,135 @@ p
 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-17.02.17 практика
+\begin_layout Subsection
+Нормальное распределение N(µ,σ2).
+ Плотность и функция распределения нормального распределения.
+ Функция Лапласа.
+ Свойства плотности нормального распределения.
+ Построение плотности и функции распределения в MATLAB, моделирование случайных
+ величин и построение гистограммы распределения.
+ Вычисление числовых характеристик: математического ожидания, дисперсии,
+ среднего квадратического отклонения.
+ 
 \end_layout
 
 \begin_layout Standard
-Случайная величина имеет 
-\series bold
-непрерывное равномерное распределение 
-\series default
-на отрезке от a до b, где 
-\begin_inset Formula $a,b\in R$
+Плотность функции распределения имеет вид:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\left(x-\mu\right)^{2}}{2\sigma^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функция распределения 
+\begin_inset Formula $N\left(\mu,\sigma^{2}\right)=F\left(x\right)=\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{x}e^{-\frac{\left(t-\mu\right)^{2}}{2\sigma^{2}}}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Когда 
+\begin_inset Formula $\mu=0,\sigma=1$
 \end_inset
 
 , 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f_{X}\left(x\right)=\begin{cases}
-\frac{1}{b-a} & x\in\left[a,b\right]\\
-0 & x\cancel{\in}\left[a,b\right]
-\end{cases}$
-\end_inset
-
-, 
-\begin_inset Formula $X\sim U\left[a,b\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $F\left(x\right)=\int_{-\infty}^{x}f\left(t\right)dt=\int_{a}^{x}\frac{1}{b-a}dt=\frac{x-a}{b-a}$
+\begin_inset Formula $F_{0}\left(x\right)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{x}e^{-\frac{t^{2}}{2}}dt$
 \end_inset
 
  
-\begin_inset Formula $a\leq x<b$
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{0}\left(x\right)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{0}e^{-\frac{t^{2}}{2}}dt+\frac{1}{\sqrt{2\pi}}\int_{0}^{x}e^{-\frac{t^{2}}{2}}dt=0,5+\Phi\left(x\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\Phi\left(x\right)$
+\end_inset
+
+ - функция Лапласа, 
+\begin_inset Formula $\Phi\left(x\right)=\frac{1}{\sqrt{2\pi}}\int_{0}^{x}e^{-t^{2}}dt$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $F\left(x\right)=\begin{cases}
-0 & x<a\\
-\frac{x-a}{b-a} & a\leq x<b\\
-1 & x\geq b
-\end{cases}$
+\begin_inset Formula $F\left(x\right)=F_{0}\left(\frac{x-\mu}{\sigma}\right)=0,5+\Phi\left(\frac{x-\mu}{\sigma}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Иногда вместо этой функции используют вид: 
+\begin_inset Formula $\Phi\left(x\right)=\frac{1}{\sqrt{2\pi}}\int_{0}^{x}e^{-\frac{t^{2}}{2}}dt\Rightarrow\overline{\Phi}\left(x\right)=\frac{2}{\sqrt{2\pi}}\int_{0}^{x}e^{-\frac{t^{2}}{2}}dt$
+\end_inset
+
+ (или же интеграл ошибок, error function): 
+\begin_inset Formula $erf\left(x\right)=\frac{2}{\sqrt{2\pi}}\int_{0}^{x}e^{-t^{2}}dt=2\Phi\left(x\sqrt{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Свойства нормального распределения:
+\end_layout
+
+\begin_layout Enumerate
+Функция плотности определена на всей оси
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(x\right)>0\forall x\in{\cal R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula ${\displaystyle \lim_{x\rightarrow\infty}f\left(x\right)=0,{\displaystyle \lim_{x\rightarrow-\infty}f\left(x\right)=0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\max f\left(x\right)=f\left(\mu\right)=\frac{1}{\sigma\sqrt{2\pi}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+График функции плотности симметричен относительно прямой 
+\begin_inset Formula $x=\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+График функции 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ имеет 2 точки перегба, симметричные относительно точки 
+\begin_inset Formula $x=\mu$
+\end_inset
+
+ и эти точки перегиба имеют координаты 
+\begin_inset Formula $x_{1,2}=\mu\pm\delta$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x_{1,2}\right)=\frac{1}{\sigma\sqrt{2\pi e}}$
 \end_inset
 
 
@@ -1077,7 +1055,284 @@ p
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename вставлено4.png
+	filename вставлено13.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Вероятность попадания нормально распределенной случайной величины в заданный
+ интервал.
+ Правило 3 сигм.
+ Моделирование случайных величин с нормальным распределением N(µ,σ2) в MATLAB.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(\alpha,\beta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(\alpha<x<\beta\right)=\Phi\left(\frac{\beta-\mu}{\sigma}\right)-\Phi\left(\frac{\alpha-\mu}{\sigma}\right)$
+\end_inset
+
+, где 
+\begin_inset Formula $\Phi\left(x\right)=\frac{1}{\sqrt{2\pi}}\int_{0}^{x}e^{-\frac{t}{2}}dt$
+\end_inset
+
+ - функция Лапласа
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|x-\mu\right|<\delta\rightarrow\mu-\delta<x<\mu+\delta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(\left|x-\mu\right|<\delta\right)=P\left(\mu-\delta<x<\mu+\delta\right)=\Phi\left(\frac{\mu+\delta-\mu}{\sigma}\right)-\Phi\left(\frac{\mu-\delta-\mu}{\sigma}\right)=\Phi\left(\frac{\delta}{\sigma}\right)-\Phi\left(-\frac{\delta}{\sigma}\right)=2\Phi\left(\frac{\delta}{\sigma}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Если
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=\sigma:P\left(\left|x-\mu\right|<\sigma\right)=2\Phi\left(1\right)=0,6827$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=2\sigma:P\left(\left|x-\mu\right|<2\sigma\right)=2\phi\left(2\right)=0,9545$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=3\sigma:P\left(\left|x-\mu\right|<3\sigma\right)=\Phi\left(3\right)=0,9973$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Больше чем 
+\begin_inset Formula $3\sigma$
+\end_inset
+
+ можно принебречь.
+\end_layout
+
+\begin_layout Standard
+Правило: с вероятностью 0,9973 значение нормального распределения СВ лежит
+ в интервале 
+\begin_inset Formula $\left[\mu-3\sigma;\mu+3\sigma\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\sim N\left(0,1\right),Y=\mu+\sigma X\sim N\left(\mu,\sigma^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(X\right)=0,D\left(X\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E\left(Y\right)=E\left(\mu\right)+\sigma E\left(x\right)=\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(Y\right)=D\left(\mu\right)+\sigma^{2}D\left(x\right)=\sigma^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Функция распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено14.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Моделирование дискретных случайных величин.
+ Общий метод: моделирование а) по заданному закону распределения; б) по
+ заданной функции распределения.
+ Вычисление числовых характеристик.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{i=1}^{n}p_{i}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Многоугольник распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено16.png
 	scale 50
 
 \end_inset
@@ -1086,58 +1341,647 @@ p
 \end_layout
 
 \begin_layout Standard
-Математическое ожидание 
-\begin_inset Formula $E\left(X\right)=\int_{-\infty}^{\infty}x\cdot f\left(x\right)dx=\int_{-\infty}^{\infty}x\frac{1}{b-a}dx=\frac{1}{b-a}\int_{a}^{b}xdx=\frac{1}{b-a}\frac{x^{2}}{2}|_{a}^{b}=\frac{b^{2}-a^{2}}{2\left(b-a\right)}=\frac{a+b}{2}$
+Ряд распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено17.png
+	scale 50
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D\left(X\right)=E\left(\left(X-E\left(X\right)\right)^{2}\right)=E\left(X^{2}\right)-\left(E\left(X\right)\right)^{2}$
+Функция распределения.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено18.png
+	scale 50
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $E\left(X^{2}\right)=\int_{-\infty}^{\infty}\frac{x^{2}}{b-a}dx=\frac{1}{b-a}\int_{-\infty}^{+\infty}x^{2}dx=\frac{1}{b-a}\frac{x^{3}}{3}|_{a}^{b}=\frac{b^{3}-a^{3}}{3\left(b-a\right)}=\frac{\left(b-a\right)\left(b^{2}+ba+a^{2}\right)}{3\left(b-a\right)}=\frac{b^{2}+ba+a^{2}}{3}$
+Общий метод моделирования дискретной СВ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\in\left\{ x_{1},...,x_{n}\right\} $
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $D\left(X\right)=\frac{b^{2}+ba+a^{2}}{3}-\frac{\left(a+b\right)^{2}}{4}=\frac{4b^{2}+4ba+4a^{2}-3a^{2}-6ab-3b^{2}}{12}=\frac{\left(a-b\right)^{2}}{12}$
+№1.
+ Отрезок 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ разбивается на 
+\begin_inset Formula $n$
+\end_inset
+
+ непересекающихся участков, длины которых равны 
+\begin_inset Formula $p\left(x_{i}\right)$
+\end_inset
+
+ или 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ .
+ Устанавливается взаимно однозначное соответствие в множество указанных
+ участков и множество генерируемых ДСВ.
+ При этом, участку длины 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ соответствует значение 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+№2.
+ Моделируется непрерывная СВ 
+\begin_inset Formula $Y$
+\end_inset
+
+ с равномерным распределением на отрезке аи 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+ Она попадает на один из указанных участков.
+ Значение 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ , соответствующее этому участку, принимается за реализацию 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Пример:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0,3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено15.png
+	scale 50
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-Если 
-\begin_inset Formula $X\text{\textasciitilde}U\left[0,1\right]$
+??? Надо будет доответить
+\end_layout
+
+\begin_layout Subsection
+Моделирование дискретных случайных величин.
+ Частный метод: моделирование дискретного равномерного распределения.
+ Вычисление числовых характеристик.
+ 
+\end_layout
+
+\begin_layout Standard
+Функции округления:
+\end_layout
+
+\begin_layout Standard
+round - до ближайшего целого, floor - возвращает значения, округленные до
+ ближайшего целого 
+\begin_inset Formula $\leq X$
+\end_inset
+
+, fix - усечение дробной части числа, ceil - возвращает значения, округленные
+ до ближайшего целого 
+\begin_inset Formula $\geq X$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $Y=a+\left(b-a\right)\cdot X\Rightarrow Y\sim U\left[a,b\right]$
-\end_inset
+См.
+ 2.3.
+\end_layout
 
-
+\begin_layout Subsection
+Моделирование непрерывных случайных величин.
+ Общие методы.
+ Метод обратной функции.
+ Моделирование случайных величин экспоненциально распределенных с параметром
+ λ .
+ 
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-01.03.17 лекция
+Метод обратной функции
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Моделирование случайных величин экспоненциально распределенных с параметром
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Плотность 
+\begin_inset Formula $f_{Y}\left(x\right)=\begin{cases}
+\lambda e^{-\lambda x}, & x\geq0\\
+0, & x<0
+\end{cases}$
+\end_inset
+
+, ФР: 
+\begin_inset Formula $F_{Y}\left(x\right)=\begin{cases}
+1-e^{-\lambda x}, & x\geq0\\
+0 & x<0
+\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Если случайная величина 
+\begin_inset Formula $X\sim U\left[0,1\right]$
+\end_inset
+
+, то 
+\begin_inset Formula $Y=-\frac{1}{\lambda}\ln\left(X\right)\sim Exp\left(\lambda\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+МО: 
+\begin_inset Formula $E\left(Y\right)=\frac{1}{\lambda}$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(Y\right)=\frac{1}{\lambda^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma\left(Y\right)=\frac{1}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Моделирование непрерывных случайных величин.
+ Общие методы.
+ Метод Неймана.
+ 
+\end_layout
+
+\begin_layout Standard
+???
+\end_layout
+
+\begin_layout Subsection
+Приближенное моделирование нормальной случайной величины на основе центральной
+ предельной теоремы.
+ 
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $R\in U\left[0,1\right]$
+\end_inset
+
+, 
+\begin_inset Formula $M\left(R\right)=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(R\right)=\frac{1}{12}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $M\left(\sum_{j=1}^{n}R_{j}\right)=\frac{n}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $D\left(\sum_{j=1}^{n}R_{j}\right)=\frac{n}{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $std\left(\sum_{j=1}^{n}R_{j}\right)=\sqrt{\frac{n}{12}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Нормируем:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\sum_{j=1}^{n}R_{j}-\frac{n}{2}}{\sqrt{\frac{n}{12}}}$
+\end_inset
+
+ - в силу центральной предельной теоремы, при 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ распределение этой нормированной случайной величины стремится к 
+\begin_inset Formula $\sim N\left(0,1\right)$
+\end_inset
+
+.
+ При конечном n распределение приближенно нормальное.
+ В частности, при 
+\begin_inset Formula $n=12:\sum_{j=1}^{n}R_{j}-6\sim N\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Метод Бокса-Мюллера.
+ 
+\end_layout
+
+\begin_layout Standard
+Стандартные величины 
+\begin_inset Formula $z_{1},...,z_{n}\sim N\left(0,1\right)$
+\end_inset
+
+ то СВ 
+\begin_inset Formula $X=z_{1}^{2}+...+z_{n}^{2}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=2$
+\end_inset
+
+, то 
+\begin_inset Formula $X\in Exp\left(\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\sim N\left(0,1\right),Y\sim N\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=r\cdot cos\left(\vartheta\right),Y=rsin\left(\vartheta\right)$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+y^{2}=r^{2}\in Exp\left(\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename вставлено9.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vartheta\pm U\left[0,2\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Метод обратной функции - экспоненциоп.
+ распределение.
+\end_layout
+
+\begin_layout Standard
+1.
+ Генерируем 2 СВ 
+\end_layout
+
+\begin_layout Standard
+от 0 до 
+\begin_inset Formula $2\pi$
+\end_inset
+
+, 
+\end_layout
+
+\begin_layout Standard
+другая с эк.
+ распред.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u\in U\left[0,1\right],v\in U\left[0,1\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vartheta=2\pi u\sim U\left[0,2\pi\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=-\frac{lnx}{\lambda}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r^{2}=-2ln\left(v\right)\Rightarrow r=\sqrt{-2ln\left(v\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=\sqrt{-2ln\left(v\right)}cos\left(2\pi u\right),Y=\sqrt{-2ln\left(v\right)}\sin\left(2\pi u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Из полярных координат переходим обратно в декартовы
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s=X^{2}+Y^{2}$
+\end_inset
+
+, если 
+\begin_inset Formula $0<s<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $cos\left(\vartheta\right)=\frac{x}{\sqrt{s}},sin\left(\vartheta\right)=\frac{y}{\sqrt{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\in U\left[-1;1\right],Y\in U\left[-1,1\right],0<s<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=\frac{x}{\sqrt{s}}\cdot\sqrt{-2ln\left(s\right)}=x\sqrt{\frac{-2ln\left(s\right)}{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=\frac{y}{\sqrt{s}}\sqrt{-2ln\left(s\right)}=y\sqrt{\frac{-2ln\left(s\right)}{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z=\left[xy\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z1=\mu+\sigma z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Моделирование многомерного гауссовского распределения
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\xi=\left(\xi_{1},\xi_{2},...,\xi_{n}\right)$
+\end_inset
+
+- случайный вектор, имеющий многомерное нормальное распределение с вектором
+ математических ожиданий 
+\begin_inset Formula $\mu=\left(\mu_{1}\mu_{2},...\mu_{n}\right)$
+\end_inset
+
+ и ковариационной матрицей 
+\begin_inset Formula $\Sigma=\left(\begin{array}{cccc}
+\sigma_{11} & \sigma_{12} & ... & \sigma_{1n}\\
+\vdots\\
+\sigma_{n1} & \sigma_{n2} & ... & \sigma_{nn}
+\end{array}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma_{ij}=M\left[\left(\xi_{i}-\mu_{i}\right)\left(\xi_{j}-\mu_{j}\right)\right]$
+\end_inset
+
+ симметричная положительно определенная матрица.
+ 
+\end_layout
+
+\begin_layout Standard
+Тогда 
+\begin_inset Formula $\xi=A\eta+\mu$
+\end_inset
+
+, где 
+\begin_inset Formula $\eta$
+\end_inset
+
+ - вектор, каждая компонента которого имеет рапределение 
+\begin_inset Formula $N\left(0,1\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $A$
+\end_inset
+
+ - нижняя треугольная матрица, полученная из матрицы 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ разложением Холецкого 
+\begin_inset Formula $\sum=A\cdot A^{T}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Вероятностное пространство.
- Случайные величины и случайные процессы.
+Третья Часть
+\end_layout
+
+\begin_layout Subsection
+Вероятностные пространства, случайные величины и случайные процессы.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1451,6 +2295,30 @@ p
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+Другое определение: 
+\series default
+Случайным процессом на интервале 
+\begin_inset Formula $T\subset{\cal R}$
+\end_inset
+
+ называется семейство СВ 
+\begin_inset Formula $X=\left(X_{t}\right)_{t\in T}$
+\end_inset
+
+ (относительно базиса 
+\begin_inset Formula $\left(\Omega,{\cal F},P\right)$
+\end_inset
+
+) - это функция от двух аргументов 
+\begin_inset Formula $X_{t}\left(\omega\right),\omega\in{\cal R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Для каждого фиксирвоанного 
 \begin_inset Formula $t\in T$
 \end_inset
@@ -1482,8 +2350,8 @@ p
 
 \end_layout
 
-\begin_layout Section
-Условное математическое ожидание
+\begin_layout Subsection
+Условное математическое ожидание и его свойства.
 \end_layout
 
 \begin_layout Standard
@@ -1822,8 +2690,10 @@ p
 .
 \end_layout
 
-\begin_layout Section
-Мартингалы
+\begin_layout Subsection
+Мартингалы, субмартингалы и супермартингалы.
+ Привести примеры.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1915,52 +2785,6 @@ p
 \end_inset
 
  
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-15.03.17
-\end_layout
-
-\begin_layout Standard
-Случайным процессом на интервале 
-\begin_inset Formula $T\subset{\cal R}$
-\end_inset
-
- называется семейство СВ 
-\begin_inset Formula $X=\left(X_{t}\right)_{t\in T}$
-\end_inset
-
- (относительно базиса 
-\begin_inset Formula $\left(\Omega,{\cal F},P\right)$
-\end_inset
-
-) - это функция от двух аргументов 
-\begin_inset Formula $X_{t}\left(\omega\right),\omega\in{\cal R}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-При 
-\begin_inset Formula $t\in T$
-\end_inset
-
- случайная функция 
-\begin_inset Formula $X_{t}$
-\end_inset
-
- является СВ, а при 
-\begin_inset Formula $\forall\omega\in\Omega$
-\end_inset
-
- 
-\begin_inset Formula $X_{t}\left(\omega\right)$
-\end_inset
-
- - реализация СВ.
 \end_layout
 
 \begin_layout Standard
@@ -2239,6 +3063,11 @@ p
 
 \end_layout
 
+\begin_layout Subsection
+Предельные теоремы для мартингалов.
+ 
+\end_layout
+
 \begin_layout Standard
 
 \series bold
@@ -2438,12 +3267,6 @@ max\left\{ m:\tau_{2m}\leq N\right\}  & \tau_{2}\leq N
 \begin_layout Standard
 
 \series bold
-29.03.17
-\end_layout
-
-\begin_layout Standard
-
-\series bold
 Теорема:
 \series default
  пусть 
@@ -2568,16 +3391,9 @@ max\left\{ m:\tau_{2m}\leq N\right\}  & \tau_{2}\leq N
 Доказано
 \end_layout
 
-\begin_layout Section
-
-\series bold
-Гауссовские процессы
-\end_layout
-
 \begin_layout Subsection
-
-\series bold
-Многомерные гауссовские процессы
+Многомерное гауссовское распределение.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2593,7 +3409,11 @@ max\left\{ m:\tau_{2m}\leq N\right\}  & \tau_{2}\leq N
 \series bold
 гауссовское
 \series default
- распределение с плотностью 
+ 
+\series bold
+распределение
+\series default
+ с плотностью 
 \begin_inset Formula $f_{X}\left(x\right)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left(-\frac{\left(x-m\right)^{2}}{2\sigma^{2}}\right)$
 \end_inset
 
@@ -2905,10 +3725,9 @@ max\left\{ m:\tau_{2m}\leq N\right\}  & \tau_{2}\leq N
 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-12.04.17 Процессы с независимым приращением.
+\begin_layout Subsection
+Процессы с независимыми приращениями.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2931,10 +3750,12 @@ max\left\{ m:\tau_{2m}\leq N\right\}  & \tau_{2}\leq N
  независимы в совокупности.
 \end_layout
 
-\begin_layout Section
-
-\series bold
-Процесс Пуассона и распределение Пуассона.
+\begin_layout Subsection
+Распределение Пуассона.
+ Процесс Пуассона.
+ Неоднородный процесс Пуассона.
+ Сложный процесс Пуассона.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3179,7 +4000,7 @@ X - процесс с целочисленными значениями, где 
  .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 
 \series bold
 Неоднородный процесс Пуассона.
@@ -3233,7 +4054,7 @@ X - процесс с целоисленными значениями, где С
  .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 
 \series bold
 Сложный процесс Пуассона
@@ -3292,10 +4113,9 @@ X - процесс с целоисленными значениями, где С
 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
+\begin_layout Subsection
 Винеровский процесс.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3462,16 +4282,8 @@ X - процесс с целоисленными значениями, где С
 
 \end_layout
 
-\begin_layout Standard
-
-\series bold
-26.04.17 лекция
-\end_layout
-
-\begin_layout Section
-
-\series bold
-Марковские цепи
+\begin_layout Subsection
+Марковские цепи.
 \end_layout
 
 \begin_layout Standard
@@ -3989,315 +4801,10 @@ X - процесс с целоисленными значениями, где С
 \end_layout
 
 \begin_layout Section
-
-\series bold
-10.05.17 Моделирование СВ с нормальным распределением.
+Лишнее
 \end_layout
 
-\begin_layout Subsection
-
-\series bold
-Метод, основанный на центральной теореме.
-\end_layout
-
-\begin_layout Standard
-Пусть 
-\begin_inset Formula $R\in U\left[0,1\right]$
-\end_inset
-
-, 
-\begin_inset Formula $M\left(R\right)=\frac{1}{2}$
-\end_inset
-
-, 
-\begin_inset Formula $D\left(R\right)=\frac{1}{12}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Тогда 
-\begin_inset Formula $M\left(\sum_{j=1}^{n}R_{j}\right)=\frac{n}{2}$
-\end_inset
-
-, 
-\begin_inset Formula $D\left(\sum_{j=1}^{n}R_{j}\right)=\frac{n}{12}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $std\left(\sum_{j=1}^{n}R_{j}\right)=\sqrt{\frac{n}{12}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Нормируем:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{\sum_{j=1}^{n}R_{j}-\frac{n}{2}}{\sqrt{\frac{n}{12}}}$
-\end_inset
-
- - в силу центральной предельной теоремы, при 
-\begin_inset Formula $n\rightarrow\infty$
-\end_inset
-
- распределение этой нормированной случайной величины стремится к 
-\begin_inset Formula $\sim N\left(0,1\right)$
-\end_inset
-
-.
- При конечном n распределение приближенно нормальное.
- В частности, при 
-\begin_inset Formula $n=12:\sum_{j=1}^{n}R_{j}-6\sim N\left(0,1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\series bold
-Преобразование Бокса-Мюллера
-\end_layout
-
-\begin_layout Standard
-Стандартные величины 
-\begin_inset Formula $z_{1},...,z_{n}\sim N\left(0,1\right)$
-\end_inset
-
- то СВ 
-\begin_inset Formula $X=z_{1}^{2}+...+z_{n}^{2}$
-\end_inset
-
- .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $k=2$
-\end_inset
-
-, то 
-\begin_inset Formula $X\in Exp\left(\frac{1}{2}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $X\sim N\left(0,1\right),Y\sim N\left(0,1\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $X=r\cdot cos\left(\vartheta\right),Y=rsin\left(\vartheta\right)$
-\end_inset
-
-,
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x^{2}+y^{2}=r^{2}\in Exp\left(\frac{1}{2}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename вставлено9.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\vartheta\pm U\left[0,2\pi\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Метод обратной функции - экспоненциоп.
- распределение.
-\end_layout
-
-\begin_layout Standard
-1.
- Генерируем 2 СВ 
-\end_layout
-
-\begin_layout Standard
-от 0 до 
-\begin_inset Formula $2\pi$
-\end_inset
-
-, 
-\end_layout
-
-\begin_layout Standard
-другая с эк.
- распред.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $u\in U\left[0,1\right],v\in U\left[0,1\right]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\vartheta=2\pi u\sim U\left[0,2\pi\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $f\left(x\right)=-\frac{lnx}{\lambda}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $r^{2}=-2ln\left(v\right)\Rightarrow r=\sqrt{-2ln\left(v\right)}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $X=\sqrt{-2ln\left(v\right)}cos\left(2\pi u\right),Y=\sqrt{-2ln\left(v\right)}\sin\left(2\pi u\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Из полярных координат переходим обратно в декартовы
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $s=X^{2}+Y^{2}$
-\end_inset
-
-, если 
-\begin_inset Formula $0<s<1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $cos\left(\vartheta\right)=\frac{x}{\sqrt{s}},sin\left(\vartheta\right)=\frac{y}{\sqrt{s}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $X\in U\left[-1;1\right],Y\in U\left[-1,1\right],0<s<1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $x=\frac{x}{\sqrt{s}}\cdot\sqrt{-2ln\left(s\right)}=x\sqrt{\frac{-2ln\left(s\right)}{s}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y=\frac{y}{\sqrt{s}}\sqrt{-2ln\left(s\right)}=y\sqrt{\frac{-2ln\left(s\right)}{s}}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z=\left[xy\right]$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $z1=\mu+\sigma z$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\series bold
-Моделирование многомерного гауссовского распределения
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\xi=\left(\xi_{1},\xi_{2},...,\xi_{n}\right),\mu=\left(\mu_{1}\mu_{2},...\mu_{n}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\Sigma=\left(\begin{array}{cccc}
-\sigma_{11} & \sigma_{12} & ... & \sigma_{1n}\\
-\vdots\\
-\sigma_{n1} & \sigma_{n2} & ... & \sigma_{nn}
-\end{array}\right)$
-\end_inset
-
- - симметричная положительно определенная матрица.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\xi=A\eta+\mu$
-\end_inset
-
-, где 
-\begin_inset Formula $\eta$
-\end_inset
-
- - вектор, каждая компонента которого имеетр рапределение 
-\begin_inset Formula $N\left(0,1\right)$
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-где 
-\begin_inset Formula $A$
-\end_inset
-
- - нижняя треугольная матрица, полученная из матрицы 
-\begin_inset Formula $\Sigma$
-\end_inset
-
- разложением Холецкого 
-\begin_inset Formula $\sum=A\cdot A^{T}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
+\begin_layout Subsection*
 
 \series bold
 Марковские цепи с дискретным временем и конечным числом состояний
@@ -4672,6 +5179,79 @@ p_{3}= & \frac{1}{3}p_{1}+\frac{1}{2}p_{2}+0\cdot p_{3}\\
 \begin_layout Standard
 Т.к.
  система регулярна, то предельные вероятности совпадают со стационарными
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+15.02.17 лекция
+\end_layout
+
+\begin_layout Subsection
+Дискретные случайные величины
+\end_layout
+
+\begin_layout Subsection
+Основные понятия
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Законом распределения случайной величины 
+\series default
+называется любое соотношение, устанавливающее связь между возможными значениями
+ случайной величины и вероятностями, соответствующими этим значениям.
+\end_layout
+
+\begin_layout Subsection
+Независимые одинаково-распределенные случайные величины НОР СВ.
+\end_layout
+
+\begin_layout Standard
+Пусть 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+- НОР СВ
+\end_layout
+
+\begin_layout Standard
+Обозначим 
+\begin_inset Formula $\bar{X}=\frac{X_{1}+...+X_{n}}{n}$
+\end_inset
+
+, тогда 
+\begin_inset Formula $M\left(\bar{X}\right)=\frac{M\left(X_{1}\right)+...+M\left(X_{n}\right)}{n}=\frac{n\cdot a}{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+где 
+\begin_inset Formula $M\left(X_{i}\right)=a,i=1,2,...,n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D\left(\bar{X}\right)=D\left(\frac{X_{1}+X_{2}+...+X_{n}}{n}\right)=\frac{D\left(X_{1}\right)+D\left(X_{2}\right)+...+D\left(X_{n}\right)}{n^{2}}=\frac{n\cdot D}{n^{2}}=\frac{D}{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sigma\left(\bar{X}\right)=\sqrt{D\left(\bar{X}\right)}=\sqrt{\frac{D}{n}}=\frac{\sqrt{D}}{\sqrt{n}}=\frac{\sigma}{\sqrt{n}}$
+\end_inset
+
+, где 
+\begin_inset Formula $\sigma=\sigma\left(X_{i}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_body
